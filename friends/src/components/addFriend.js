@@ -38,9 +38,27 @@ import { axiosWithAuth } from '../utils/axiosWithAuth'
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <input onChange={this.handleChange} type='text' name='name' placeholder='Name' value={this.state.newFriend.name} />
-                    <input onChange={this.handleChange} type='text' name='age' placeholder='Age' value={this.state.newFriend.age}/>
-                    <input onChange={this.handleChange} type='text' name='email' placeholder='Email'value={this.state.newFriend.email} />
+                    <input 
+                    onChange={this.handleChange} 
+                    type='text' 
+                    name='name' 
+                    placeholder='Name' 
+                    value={this.state.newFriend.name} />
+
+                    <input 
+                    onChange={this.handleChange} 
+                    type='text' 
+                    name='age' 
+                    placeholder='Age' 
+                    value={this.state.newFriend.age}/>
+
+                    <input 
+                    onChange={this.handleChange} 
+                    type='text' 
+                    name='email' 
+                    placeholder='Email'
+                    value={this.state.newFriend.email} />
+                    
                     <button>Add Friend</button>
                 </form>
             </div>
